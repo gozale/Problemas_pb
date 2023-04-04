@@ -1,43 +1,45 @@
 console.log("Imprime el mayor y el menor de una serie de 5 números que introduzcamos");
 
-function getMax(num_list){
-  let max= num_list[0];
-  for(let i=1; i<num_list.length; i++){
-    if(max < num_list[i]){
-      max=num_list[i];
-    }
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+let num_list = [];
+  
+readline.question('Introduce un número: ', (num1) => {
+  numeros.push(parseInt(num1));
+  
+readline.question('Introduce otro número: ', (num2) => {
+  numeros.push(parseInt(num2));
+  
+readline.question('Introduce otro número: ', (num3) => {
+  numeros.push(parseInt(num3));
+  
+readline.question('Introduce otro número: ', (num4) => {
+  numeros.push(parseInt(num4));
+  
+readline.question('Introduce otro número: ', (num5) => {
+  numeros.push(parseInt(num5));
+  
+let mayor = numeros[0];
+let menor = numeros[0];
+  
+for (let i = 1; i < numeros.length; i++) {
+  if (numeros[i] > mayor) {
+    mayor = numeros[i];
   }
-  return max;   
+  if (numeros[i] < menor) {
+    menor = numeros[i];
+   }
 }
   
-function getMin(num_list){
-  let min= num_list[0];
-  for(let i=1; i<num_list.length; i++){
-    if(min > num_list[i]){
-      min=num_list[i];
-    }
-  }
-  return min;  
-}
+console.log("El número mayor es: "+ mayor);
+console.log("El número menor es: "+ menor);
   
-const readline= require('readline');
- 
-const rl= readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+readline.close();
 });
-  
-let lineCount=0;
-let num_list = new Array(5);
-rl.prompt();
-
-rl.on('linea',(linea)=>{
-    num_list[lineCount] = Number.parseFloat(linea);
-    lineCount++;
-    if (lineCount == 5) {
-        rl.close();
-        console.log(num_list);
-        console.log('Número mínimo: ' + getMin(num_list));
-        console.log('Número máximo: ' + getMax(num_list));
-    }  
-})
+});
+});
+});
+});
