@@ -8,11 +8,17 @@ const fs = readline.createInterface({
 });
 
 let contador=0;
-fs.on('line',()=>{
-  contador++;
-}).on('close', () =>{
-  console.log('Total number of phrases: ' + contador);
-  process.exit(0);
-});
 
-fs.prompt();
+function ingresarFrase(){
+  fs.question("Introduce una frase o 'close': ", function(frase){
+    if (frase.toLowerCase() === "close"){
+      console.log("Fueron "+contador+" frases");
+      fs.close();
+    } else{
+      contador++;
+      ingresarFrase();
+    }
+  });
+}
+
+ingresarFrase();
