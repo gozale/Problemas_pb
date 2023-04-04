@@ -11,7 +11,11 @@ rl.question('Ingresa un número: ',(num) =>{
   if(isNaN(num)){
     console.log("No es un número");
   }else{
-    (number < 0) ? console.log("Número negativo") : console.log("Número positivo");
+    if(num>=0){
+      console.log("Número positivo");
+    else{
+      console.log("Número negativo");
+    }
   }
   rl.close();
 });
