@@ -11,7 +11,7 @@ let cont=0;
 
 rl.question('Ingrese el número: ',(num) =>{
   is(isNaN(num)){
-    console.log("No es un número");
+    console.log("No es un número")
   }else{
     for(let i=3; i<=num; i=i+3){
       cont++;
