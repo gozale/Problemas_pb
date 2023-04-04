@@ -8,19 +8,19 @@ const readline = require('readline').createInterface({
 let num_list = [];
   
 readline.question('Introduce un número: ', (num1) => {
-  numeros.push(parseInt(num1));
+  num_list.push(parseInt(num1));
   
 readline.question('Introduce otro número: ', (num2) => {
-  numeros.push(parseInt(num2));
+  num_list.push(parseInt(num2));
   
 readline.question('Introduce otro número: ', (num3) => {
-  numeros.push(parseInt(num3));
+  num_list.push(parseInt(num3));
   
 readline.question('Introduce otro número: ', (num4) => {
-  numeros.push(parseInt(num4));
+  num_list.push(parseInt(num4));
   
 readline.question('Introduce otro número: ', (num5) => {
-  numeros.push(parseInt(num5));
+  num_list.push(parseInt(num5));
   
 let mayor = num_list[0];
 let menor = num_list[0];
