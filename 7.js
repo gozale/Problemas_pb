@@ -9,7 +9,7 @@ const fs = readline.createInterface({
 
 let contador=0;
 fs.on('line',()=>{
-  count++;
+  contador++;
 }).on('close', () =>{
   console.log('Total number of phrases: ' + contador);
   process.exit(0);
