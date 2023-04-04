@@ -13,5 +13,6 @@ for(let i=1; i<=100; i++){
     console.log("Múlitplo de 2 y 3: "+i);
     cont++;
   }
+}
 console.log("El total de números que son múltiplos de 2 o 3 es: "+cont);
   
