@@ -22,15 +22,15 @@ readline.question('Introduce otro número: ', (num4) => {
 readline.question('Introduce otro número: ', (num5) => {
   numeros.push(parseInt(num5));
   
-let mayor = numeros[0];
-let menor = numeros[0];
+let mayor = num_list[0];
+let menor = num_list[0];
   
-for (let i = 1; i < numeros.length; i++) {
-  if (numeros[i] > mayor) {
-    mayor = numeros[i];
+for (let i = 1; i < num_list.length; i++) {
+  if (num_list[i] > mayor) {
+    mayor = num_list[i];
   }
-  if (numeros[i] < menor) {
-    menor = numeros[i];
+  if (num_list[i] < menor) {
+    menor = num_list[i];
    }
 }
   
