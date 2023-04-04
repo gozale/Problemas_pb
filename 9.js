@@ -13,7 +13,7 @@ rl.question('Ingresa un número: ',(num) =>{
   }else{
     if(num>=0){
       console.log("Número positivo");
-    else{
+    }else{
       console.log("Número negativo");
     }
   }
