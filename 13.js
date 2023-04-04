@@ -6,10 +6,10 @@ for(let i=1; i<=100; i++){
   if(i%2==0 && i%3!=0){
     console.log("Múltiplo de 2: "+i);
     cont++;
-  }elif(i%3==0 && i%2!=0){
+  }else if(i%3==0 && i%2!=0){
     console.log("Múltiplo de 3: "+i);
     cont++;
-  }elif(i%2==0 && i%3==0){
+  }else if(i%2==0 && i%3==0){
     console.log("Múlitplo de 2 y 3: "+i);
     cont++;
   }
