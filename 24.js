@@ -19,6 +19,6 @@ const rl = readline.createInterface({
 });
 
 rl.on('line',(linea)=>{
-    console.log("La primaridad del número es: " + isPrime(Number.parseInt(linea)));
+    console.log("La primaridad del número es: " + esPrimo(Number.parseInt(linea)));
     rl.close();
 });
