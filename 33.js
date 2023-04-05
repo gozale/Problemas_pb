@@ -1,6 +1,6 @@
 console.log("Hacer un programa que lea las calificaciones de un alumno en 10 asignaturas, las almacene en y calcule e imprima su media");
 
-const estudiante = require('./estudiante');
+const Estudiante = require('./Estudiante');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 });
 
 let lineCount = 0;
-let estudiante = new estudiante();
+let estudiante = new Estudiante();
 rl.question("Ingresa el nombre del estudiante, y las notas del mismo de la siguiente forma: {asignatura,nota} \nStudent name: ",(answer)=>{
     student.name = answer;
 });
