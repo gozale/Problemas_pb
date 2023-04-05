@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 
 rl.on('line',(linea)=>{
     for(let i = 1; i <= 10; i++){
-        console.log(`${line} X ${i} = ${Number.parseInt(linea)*i}`);
+        console.log(Number.parseInt(linea)*i);
     }
     rl.close();
 });
