@@ -20,7 +20,7 @@ rl.question("Ingresa la letra a buscar en la frase: ",(letra) =>{
   for(let l of fracesita){
     if(l===letr) cont++;
   }
-  console.log("La letra '"+letr+"' aparece "+cont+" veces en la frase "+ fracesita);
+  console.log("La letra '"+letr+"' aparece "+cont+" veces en la frase '"+ fracesita+"'");
   rl.close();
 });
 });
