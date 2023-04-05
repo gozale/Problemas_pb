@@ -11,16 +11,16 @@ let fracesita="";
 let letr='';
 let cont=0;
 
-rl.question("Ingresa la frase",(frase_inp) =>{
+rl.question("Ingresa la frase: ",(frase_inp) =>{
   fracesita=frase_inp;
 
-rl.question("Ingresa la letra a buscar en la frase",(letra) =>{
+rl.question("Ingresa la letra a buscar en la frase: ",(letra) =>{
   letr=letra;
 
   for(let l of fracesita){
     if(l===letr) cont++;
   }
-  console.log("La letra "+letr+" aparece "+cont+" veces en la frase "+ fracesita);
+  console.log("La letra '"+letr+"' aparece "+cont+" veces en la frase "+ fracesita);
   rl.close();
 });
 });
