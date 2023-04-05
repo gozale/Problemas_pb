@@ -8,11 +8,11 @@ const rl = readline.createInterface({
   });
 
 function show(frase){
-  const screen = rl.screen({
+  const screen = readline.screen({
     smartCSR: true
   });
   
-  const text = rl.text({
+  const text = readline.text({
     content: 'ASAS',
     top: 'center',
     left: 'center',
