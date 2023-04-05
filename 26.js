@@ -1,18 +1,18 @@
 console.log("Introducir una frase por teclado e imprimirla en el centro de la pantalla");
 
-const blessed = require('blessed');
+const readline = require('readline');
 
-const readline = require('readline').createInterface({
+const rl = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
   });
 
 function mostrar(frase){
-  const screen = blessed.screen({
+  const screen = readline.screen({
     smartCSR: true
   });
   console.log("Entras")
-  const text = blessed.text({
+  const text = readline.text({
     content: 'ASAS',
     top: 'center',
     left: 'center',
@@ -24,7 +24,7 @@ function mostrar(frase){
 
 }
 
-readline.question('Introduce una frase: ', (frase) => {
+rl.question('Introduce una frase: ', (frase) => {
   mostrar(frase);
   readline.close();
 });
