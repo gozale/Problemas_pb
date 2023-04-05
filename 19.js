@@ -6,4 +6,4 @@ function mostrarTiempo(){
   console.log(m);
   setTimeout(displayTime,10000);
 }
-displayTime();
+mostrarTiempo();
