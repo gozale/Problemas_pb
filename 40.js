@@ -31,7 +31,7 @@ let ventas = generarVenta(4, vendedores);
 
 ventas.forEach((producto, indice) => {
     console.log(`Ventas producto ${indice}`);
-    product.forEach((mes, indice) => {
+    producto.forEach((mes, indice) => {
         let total = mes.reduce((acc, current) => {
             return acc + current.venta
         }, 0);
