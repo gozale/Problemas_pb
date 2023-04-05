@@ -7,6 +7,7 @@ Grupo: 6CC2
 Alumno: Alejandro Arturo Gonzalez Flores
 Matricula: 348552
 
+# Problemas
 1. Hacer un programa que imprima los números del 1 al 100.
 
 2. Hacer un programa que imprima los números del 100 al 0, en orden decreciente.
