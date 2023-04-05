@@ -7,7 +7,33 @@ const rl=readline.createInterface({
   output: process.stdout
 });
 
-let count_tot=0;
-let count_par=0;
+let cont_tot=0;
+let cont_par=0;
 let sum_imp=0;
 
+rl.question('Introduce un número: ', (num1) => {
+  const n1 = parseInt(num1);
+  
+  rl.question('Introduce un número: ', (num2) => {
+   const n2 = parseInt(num2);
+     
+    const menor = Math.min(n1,n2); 
+    const mayor = Math.max(n1,n2);
+    
+    for (let i=menor; i<= mayor; i++){
+      cont_tot++;
+      console.log(i);
+      if(i%2==0){
+        cont_par++;
+      }else{
+        sum_imp+=i; 
+      };  
+    };
+    console.log("Total de números en el rango: "+ cont_tot);
+    console.log("Total de números pares: "+ cont_par);
+    console.log("Suma de impares: "+ sum_imp);
+    
+    readline.close();
+    
+  });
+});
