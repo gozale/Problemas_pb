@@ -24,7 +24,7 @@ function show(frase){
 
 }
 
-readline.question('Introduce una frase: ', (frase) => {
-  mostrar(frase);
+rl.question('Introduce una frase: ', (frase) => {
+  show(frase);
   readline.close();
 });
