@@ -42,7 +42,7 @@ const rl = readline.createInterface({
 let param = new Array();
 rl.on('line',(linea)=>{
     param = linea.split(',');
-    console.log(operaciones(param[0],num.parseFloat(param[1])));
+    console.log(operaciones(param[0],Number.parseFloat(param[1])));
     rl.close();
 });
 console.log("Ingresa la operación ('prim','fact','tabla') y un número separado por una coma");
