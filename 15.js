@@ -33,7 +33,7 @@ rl.question('Introduce un número: ', (num1) => {
     console.log("Total de números pares: "+ cont_par);
     console.log("Suma de impares: "+ sum_imp);
     
-    readline.close();
+    rl.close();
     
   });
 });
