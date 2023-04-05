@@ -1,8 +1,8 @@
 console.log("Introducir un número menor de 5000 y pasarlo a número romano");
 
 function romanizar(n) {
-	let	valores = [1, 5, 10, 50, 100, 500];
-	let	letras = ['I', 'V', 'X', 'L', 'C', 'D'];
+	let	valores = [1, 5, 10, 50, 100, 500, 1000];
+	let	letras = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
 	let	res = new Array();
 	let	num, letra, val, pos;
 
@@ -39,8 +39,8 @@ const rl = readline.createInterface({
 });
 rl.prompt();
 rl.on('line',(linea)=>{
-    if(Number.parseInt(linea) > 500){
-        console.log('Tiene que ser menor que 500');
+    if(Number.parseInt(linea) > 5000){
+        console.log('Tiene que ser menor que 5000');
         rl.close();
     }
     console.log(romanizar(Number.parseInt(linea)));
