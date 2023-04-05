@@ -29,6 +29,6 @@ ls.sort((a,b) => {
 
 ls.forEach((materia) => {
     materia.forEach((alumno) => {
-        console.log("Nombre: "+ alumno.nombre ", calificiacion: "+ alumno.calificacion);
+        console.log("Nombre: "+ nombre ", calificiacion: "+ calificacion );
     });
 });
