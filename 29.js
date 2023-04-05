@@ -7,4 +7,4 @@ for(let i = 0; i < 100;i++){
     if (d1 + d2 == 10) cont++;
 
 }
-console.log("Número de veces que suman 10: "+cnt);
+console.log("Número de veces que suman 10: "+cont);
