@@ -42,6 +42,7 @@ rl.on('line',(linea)=>{
     if(Number.parseInt(linea) > 500){
         console.log('Tiene que ser menor que 500');
         rl.close();
+	return;
     }
     console.log(romanizar(Number.parseInt(linea)));
     rl.close();
