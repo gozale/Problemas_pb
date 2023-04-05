@@ -7,12 +7,12 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-let frasecita="";
+let fracesita="";
 let letr='';
 let cont=0;
 
 rl.question("Ingresa la frase",(frase_inp) =>{
-  frasecita=frase_inp;
+  fracesita=frase_inp;
 
 rl.question("Ingresa la letra a buscar en la frase",(letra) =>{
   letr=letra;
