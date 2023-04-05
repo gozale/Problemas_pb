@@ -6,7 +6,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-rl.on('linea',(linea)=>{
+rl.on('line',(linea)=>{
     rl.close();
     for (let i = 0; i < 5; i++){
         console.log(linea);
