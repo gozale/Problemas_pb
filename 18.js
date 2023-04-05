@@ -25,4 +25,4 @@ rl.question("Ingresa la letra a buscar en la frase",(letra) =>{
 });
 });
 
-rl.prompr();
+rl.prompt();
