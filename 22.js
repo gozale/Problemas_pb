@@ -6,11 +6,11 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-rl.on('line',(line)=>{
+rl.on('linea',(linea)=>{
     rl.close();
     for (let i = 0; i < 5; i++){
-        console.log(line);
-        line = '    ' + line;
+        console.log(linea);
+        linea = '    ' + linea;
     }
 });
 
